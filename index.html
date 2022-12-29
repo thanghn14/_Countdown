@@ -6,10 +6,17 @@
     <title>CountDown</title>
   </head>
   <body>
+    <audio
+      controls
+      autoplay
+      src="./assets/mp3/happy-new-year-video.mp3"
+      class="audio"
+    ></audio>
+
     <div class="main">
-      <img src="./assets/img/logo.png" alt="" class="logo">
+      <img src="./assets/img/logo.png" alt="" class="logo" />
       <div class="company">
-          <p class="subCompany">CÔNG TY CỔ PHẦN KỸ THUẬT DỊCH VỤ THÀNH CÔNG</p>
+        <p class="subCompany">CÔNG TY CỔ PHẦN KỸ THUẬT DỊCH VỤ THÀNH CÔNG</p>
       </div>
       <div class="title">
         <h1>2022</h1>
@@ -27,6 +34,14 @@
       </div>
     </div>
 
+    <img src="./assets/img/play.png" alt="" class="iconPlay" onclick="myFunction()"/>
+
     <script src="./assets/js/main.js"></script>
+    <script>
+      function myFunction() {
+        var audio = new Audio('./assets/mp3/happy-new-year-video.mp3');
+        audio.play();
+      }
+    </script>
   </body>
 </html>

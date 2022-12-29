@@ -21,7 +21,7 @@
 }
 
 .logo {
-  width: 16rem;
+  width: 12rem;
   /* height: 6rem; */
   position: absolute;
   top: 1rem;
@@ -30,7 +30,7 @@
 
 .company {
   position: absolute;
-  top: 8rem;
+  top: 6.8rem;
   left: 1rem;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,8 @@
 }
 
 .subCompany {
-    font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
 }
 
 .title {
@@ -50,11 +51,11 @@
 }
 
 .title h1 {
-  font-size: 180px;
+  font-size: 160px;
   font-weight: 900;
 }
 .title h2 {
-  font-size: 30px;
+  font-size: 22px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -64,8 +65,8 @@
 }
 
 .item {
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px 20px 0 0;
   margin: 8px;
@@ -108,4 +109,16 @@
 }
 #seconds::after {
   content: "GIÂY";
+}
+
+.audio {
+  display: none;
+}
+
+.iconPlay {
+    position: absolute;
+    width: 3rem;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
 }
