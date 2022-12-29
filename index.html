@@ -7,6 +7,8 @@
   </head>
   <body>
     <div class="main">
+      <img src="./assets/img/dashboard.jpg" alt="" class="dash">
+      <img src="./assets/img/next.png" alt="" class="next" onclick="nextFunction()">
       <img src="./assets/img/logo.png" alt="" class="logo" />
       <div class="company">
         <p class="subCompany">CÔNG TY CỔ PHẦN KỸ THUẬT DỊCH VỤ THÀNH CÔNG</p>
@@ -34,6 +36,10 @@
       function myFunction() {
         var audio = new Audio('./assets/mp3/music.mp3');
         audio.play();
+      }
+
+      function nextFunction() {
+        window.location.href = 'https://thanghn14.github.io/Confetti/'
       }
     </script>
   </body>
