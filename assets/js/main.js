@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 29, 2022 15:00:00").getTime();
+var countDownDate = new Date("Dec 29, 2022 15:30:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
@@ -18,10 +18,11 @@ var x = setInterval(function () {
     document.getElementById("hours").innerHTML = 0;
     document.getElementById("minutes").innerHTML = 0;
     document.getElementById("seconds").innerHTML = 0;
+  } else {
+    document.getElementById("week").innerHTML = weeks;
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
   }
-  document.getElementById("week").innerHTML = weeks;
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
