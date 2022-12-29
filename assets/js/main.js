@@ -17,9 +17,15 @@ var x = setInterval(function () {
   var minutes = 0;
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  var main = document.querySelector(".title");
+  var dash = document.querySelector('.dash');
+  var next = document.querySelector('.next');
+
   if (seconds <= 0) {
-    window.location.href =
-      "https://app.powerbi.com/view?r=eyJrIjoiMDdlNjYxODktOTdlNS00MDlkLWI4OWItZmU3Mjk3MDU0NTM1IiwidCI6IjYyODY2ZjAxLTg2ZDAtNDhhZC05ZDMzLWZkZWVkNjczNjhiYyIsImMiOjEwfQ%3D%3D";
+    main.classList.add('modalImg');
+    dash.classList.add("disp");
+    next.classList.add("disp");
+    // window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiMDdlNjYxODktOTdlNS00MDlkLWI4OWItZmU3Mjk3MDU0NTM1IiwidCI6IjYyODY2ZjAxLTg2ZDAtNDhhZC05ZDMzLWZkZWVkNjczNjhiYyIsImMiOjEwfQ%3D%3D";
     clearInterval(x);
     document.getElementById("week").innerHTML = 0;
     document.getElementById("days").innerHTML = 0;
