@@ -28,7 +28,7 @@
   left: 1.5rem;
 }
 
-.cty {
+.company {
   position: absolute;
   top: 8rem;
   left: 1rem;
@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.subCty {
+.subCompany {
     font-family: "Rubik", sans-serif;
 }
 
