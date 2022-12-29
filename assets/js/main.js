@@ -21,8 +21,8 @@ var x = setInterval(function () {
   var dash = document.querySelector('.dash');
   var next = document.querySelector('.next');
 
-  if (seconds <= 0) {
-    main.classList.add('modalImg');
+  if (distance <= 0) {
+    main.classList.add("modalImg");
     dash.classList.add("displayBlock");
     next.classList.add("displayBlock");
     // window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiMDdlNjYxODktOTdlNS00MDlkLWI4OWItZmU3Mjk3MDU0NTM1IiwidCI6IjYyODY2ZjAxLTg2ZDAtNDhhZC05ZDMzLWZkZWVkNjczNjhiYyIsImMiOjEwfQ%3D%3D";
