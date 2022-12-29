@@ -141,9 +141,13 @@
   display: none;
 }
 
-.disp {
+.displayBlock {
   display: block;
 } 
+
+.displayNone {
+  display: none;
+}
 
 /* .modalImg {
   background: url('../img/dashboard.jpg');
