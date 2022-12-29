@@ -17,7 +17,7 @@ var x = setInterval(function () {
     document.getElementById("minutes").innerHTML = 0;
     document.getElementById("seconds").innerHTML = 0;
     // document.getElementById("countDown").innerHTML = "EXPIRED";
-    window.location.href = "https://diligo.vn/";
+    window.location.href = "https://www.google.com/";
   }
   document.getElementById("week").innerHTML = weeks;
   document.getElementById("days").innerHTML = days;
