@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 29, 2022 14:05:00").getTime();
+var countDownDate = new Date("Dec 30, 2022 11:00:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
@@ -10,13 +10,14 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   if (distance <= 0) {
+    window.location.href =
+      "https://app.powerbi.com/view?r=eyJrIjoiMDdlNjYxODktOTdlNS00MDlkLWI4OWItZmU3Mjk3MDU0NTM1IiwidCI6IjYyODY2ZjAxLTg2ZDAtNDhhZC05ZDMzLWZkZWVkNjczNjhiYyIsImMiOjEwfQ%3D%3D";
     clearInterval(x);
     document.getElementById("week").innerHTML = 0;
     document.getElementById("days").innerHTML = 0;
     document.getElementById("hours").innerHTML = 0;
     document.getElementById("minutes").innerHTML = 0;
     document.getElementById("seconds").innerHTML = 0;
-    window.location.href = "https://www.google.com/";
   }
   document.getElementById("week").innerHTML = weeks;
   document.getElementById("days").innerHTML = days;
