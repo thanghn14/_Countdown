@@ -23,8 +23,8 @@ var x = setInterval(function () {
 
   if (seconds <= 0) {
     main.classList.add('modalImg');
-    dash.classList.add("disp");
-    next.classList.add("disp");
+    dash.classList.add("displayBlock");
+    next.classList.add("displayBlock");
     // window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiMDdlNjYxODktOTdlNS00MDlkLWI4OWItZmU3Mjk3MDU0NTM1IiwidCI6IjYyODY2ZjAxLTg2ZDAtNDhhZC05ZDMzLWZkZWVkNjczNjhiYyIsImMiOjEwfQ%3D%3D";
     clearInterval(x);
     document.getElementById("week").innerHTML = 0;
