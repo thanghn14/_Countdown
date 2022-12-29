@@ -36,6 +36,10 @@
       function myFunction() {
         var audio = new Audio('./assets/mp3/music.mp3');
         audio.play();
+        setInterval(()=>{
+          var audio = new Audio('./assets/mp3/music.mp3');
+          audio.play();
+        }, 280000)
       }
 
       function nextFunction() {
