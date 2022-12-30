@@ -21,7 +21,7 @@ var x = setInterval(function () {
   var dash = document.querySelector('.dash');
   var next = document.querySelector('.next');
 
-  if (distance <= 0) {
+  if (seconds <= 0) {
     main.classList.add("modalImg");
     dash.classList.add("displayBlock");
     next.classList.add("displayBlock");
