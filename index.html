@@ -8,8 +8,13 @@
   <body>
     <div class="main">
       <div class="js-container container"></div>
-      <img src="./assets/img/dashboard_2.jpg" alt="" class="dash">
-      <img src="./assets/img/next.png" alt="" class="next" onclick="nextFunction()">
+      <img src="./assets/img/dashboard_2.jpg" alt="" class="dash" />
+      <img
+        src="./assets/img/next.png"
+        alt=""
+        class="next"
+        onclick="nextFunction()"
+      />
       <img src="./assets/img/logo.png" alt="" class="logo" />
       <div class="company">
         <p class="subCompany">CÔNG TY CỔ PHẦN KỸ THUẬT DỊCH VỤ THÀNH CÔNG</p>
@@ -30,22 +35,43 @@
       </div>
     </div>
 
-    <img src="./assets/img/play.png" alt="" class="iconPlay" onclick="myFunction()"/>
+    <img
+      src="./assets/img/play.png"
+      alt=""
+      class="iconPlay"
+      onclick="myFunction()"
+    />
+    <img
+      src="./assets/img/next_2.png"
+      alt=""
+      class="iconNext"
+      onclick="nextPage()"
+    />
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/animation.js"></script>
     <script>
       function myFunction() {
-        var audio = new Audio('./assets/mp3/music.mp3');
+        var audio = new Audio("./assets/mp3/music.mp3");
         audio.play();
-        setInterval(()=>{
-          var audio = new Audio('./assets/mp3/music.mp3');
+        setInterval(() => {
+          var audio = new Audio("./assets/mp3/music.mp3");
           audio.play();
-        }, 280000)
+        }, 280000);
       }
 
       function nextFunction() {
-        window.location.href = 'https://thanghn14.github.io/Confetti/'
+        window.location.href = "https://thanghn14.github.io/Confetti/";
+      }
+
+      function nextPage() {
+        var main = document.querySelector(".title");
+        var dash = document.querySelector(".dash");
+        var next = document.querySelector(".next");
+
+        main.classList.add("modalImg");
+        dash.classList.add("displayBlock");
+        next.classList.add("displayBlock");
       }
     </script>
   </body>
