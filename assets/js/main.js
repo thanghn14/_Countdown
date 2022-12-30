@@ -1,21 +1,21 @@
 var countDownDate = new Date("Dec 30, 2022 11:25:00").getTime();
 
 var x = setInterval(function () {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
   // var now = new Date().getTime();
   // var distance = countDownDate - now;
-  // var weeks = 0;
-  // var days = 0;
-  // var hours = 0;
-  // var minutes = 0;
+  // var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
+  // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var weeks = 0;
+  var days = 0;
+  var hours = 0;
+  var minutes = 0;
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   var main = document.querySelector(".title");
   var dash = document.querySelector('.dash');
