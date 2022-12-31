@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 30, 2022 11:55:00").getTime();
+var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
@@ -9,14 +9,6 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // var now = new Date().getTime();
-  // var distance = countDownDate - now;
-  // var weeks = 0;
-  // var days = 0;
-  // var hours = 0;
-  // var minutes = 0;
-  // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
   var main = document.querySelector(".title");
   var dash = document.querySelector('.dash');
   var next = document.querySelector('.next');
@@ -25,7 +17,7 @@ var x = setInterval(function () {
     main.classList.add("modalImg");
     dash.classList.add("displayBlock");
     next.classList.add("displayBlock");
-    // window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiMDdlNjYxODktOTdlNS00MDlkLWI4OWItZmU3Mjk3MDU0NTM1IiwidCI6IjYyODY2ZjAxLTg2ZDAtNDhhZC05ZDMzLWZkZWVkNjczNjhiYyIsImMiOjEwfQ%3D%3D";
+    // window.location.href = "https://todolist-hn.vercel.app/";
     clearInterval(x);
     document.getElementById("week").innerHTML = 0;
     document.getElementById("days").innerHTML = 0;
