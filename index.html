@@ -17,7 +17,7 @@
       />
       <div class="title">
         <h1>2022</h1>
-        <h2>Sự kiện quan trọng nhất 2022 sắp diễn ra !</h2>
+        <h2>Năm mới đang tới</h2>
       </div>
 
       <div class="count">
@@ -37,21 +37,21 @@
       class="iconPlay"
       onclick="myFunction()"
     />
-    <img
+    <!-- <img
       src="./assets/img/next_2.png"
       alt=""
       class="iconNext"
       onclick="nextPage()"
-    />
+    /> -->
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/animation.js"></script>
     <script>
       function myFunction() {
-        var audio = new Audio("./assets/mp3/music.mp3");
+        var audio = new Audio("./assets/mp3/happy-new-year-video.mp3");
         audio.play();
         setInterval(() => {
-          var audio = new Audio("./assets/mp3/music.mp3");
+          var audio = new Audio("./assets/mp3/happy-new-year-video.mp3");
           audio.play();
         }, 280000);
       }
@@ -60,15 +60,15 @@
         window.location.href = "https://todolist-hn.vercel.app/";
       }
 
-      function nextPage() {
-        var main = document.querySelector(".title");
-        var dash = document.querySelector(".dash");
-        var next = document.querySelector(".next");
+      // function nextPage() {
+      //   var main = document.querySelector(".title");
+      //   var dash = document.querySelector(".dash");
+      //   var next = document.querySelector(".next");
 
-        main.classList.add("modalImg");
-        dash.classList.add("displayBlock");
-        next.classList.add("displayBlock");
-      }
+      //   main.classList.add("modalImg");
+      //   dash.classList.add("displayBlock");
+      //   next.classList.add("displayBlock");
+      // }
     </script>
   </body>
 </html>

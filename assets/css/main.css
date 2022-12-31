@@ -15,7 +15,7 @@
   background: linear-gradient(to right, #205295, #c85c8e);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   color: #fff;
 }
@@ -51,8 +51,9 @@
 }
 
 .title h1 {
-  font-size: 160px;
+  font-size: 180px;
   font-weight: 900;
+  margin-top: 5rem;
 }
 .title h2 {
   font-size: 22px;
@@ -117,9 +118,10 @@
 
 .iconPlay {
   position: absolute;
-  width: 3rem;
-  right: 5rem;
-  bottom: 1.5rem;
+  width: 4rem;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 2rem;
   cursor: pointer;
 }
 
