@@ -17,7 +17,7 @@ var x = setInterval(function () {
     main.classList.add("modalImg");
     dash.classList.add("displayBlock");
     next.classList.add("displayBlock");
-    // window.location.href = "https://todolist-hn.vercel.app/";
+    window.location.href = "https://thanghn14.github.io/Confetti/";
     clearInterval(x);
     document.getElementById("week").innerHTML = 0;
     document.getElementById("days").innerHTML = 0;
